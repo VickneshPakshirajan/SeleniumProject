@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.Automation.Categories.IDevelopment;
+import com.Automation.Categories.IRegressionTest;
 
 public class CategoryTests {
 	WebDriver driver;
@@ -24,13 +25,14 @@ public class CategoryTests {
 	}
 	
 	@Test
-	@Category({IDevelopment.class})
+	@Category({IDevelopment.class, IRegressionTest.class})
 	public void ShouldBeAbleToOpenFacebook()
 	{
 		driver.get("http://www.facebook.com");
 	}
 	
 	@Test
+	@Category({IRegressionTest.class})
 	public void ShouldBeAbleToOpenGoogle()
 	{
 		driver.get("http://www.google.com");
