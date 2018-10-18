@@ -15,7 +15,9 @@ public class CategoryTests {
 	@Before
 	public void createDriver()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\git\\SeleniumProject\\Automation\\drivers\\chromedriver.exe");	 
+		
+		//C:\Users\USER\git\SeleniumProject1\Automation\drivers
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\USER\\git\\SeleniumProject1\\Automation\\drivers\\chromedriver.exe");	 
 		// Initialize browser
 		driver=new ChromeDriver();		 
 		driver.manage().window().maximize();
