@@ -15,7 +15,7 @@ public class ReadData {
 		try {
 			// Step 1: Open the file
 			FileInputStream file=new FileInputStream(new File("data\\"+workBookName+".xlsx"));
-			
+			//FileInputStream file=new FileInputStream(new File("C:\\Users\\USER\\git\\SeleniumProject\\Automation\\data\\"+workBookName+".xlsx"));
 			// Open the workbook from the source
 			XSSFWorkbook workbook= new XSSFWorkbook(file);
 			

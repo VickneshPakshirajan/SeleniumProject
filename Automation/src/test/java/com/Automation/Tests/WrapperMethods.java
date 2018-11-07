@@ -30,6 +30,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.openqa.selenium.support.ui.Select;
 
+import ru.yandex.qatools.allure.annotations.Step;
+
 
 public class WrapperMethods {
 
@@ -508,7 +510,7 @@ public class WrapperMethods {
 			takeSnap();
 			}
 	}
-	
+	@Step("Verify Tile")
 	public void vrfyttl (String valttl)
 	{
 		try {
@@ -519,6 +521,7 @@ public class WrapperMethods {
 			{
 			System.out.println("Title Matches sucessfully");
 			er.reportStep("Title Matches sucessfully", "Passed");
+			AllureLogUtil.log("Test Passed. Expected: Google | Actual: "+vrfyttl);
 			}
 			else
 			{
