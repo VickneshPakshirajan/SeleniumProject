@@ -72,13 +72,16 @@ public class CategoryTests {
 	}
 	
 	@Test
-	@Category({IRegressionTest.class})
+	@Title("Verify FB")
+    @Description("Verify the FB name")
+	@Category({IDevelopment.class, IRegressionTest.class})
 	public void ShouldBeAbleToOpenFacebook()
 	{
 		
-		//driver.get("http://www.facebook.com");
+		driver.get("http://www.facebook.com");
 		
 	}
+	//@Epic("Test")
 	@Title("Title check")
     @Description("Checking the title of the loaded page.")
 	@Test
